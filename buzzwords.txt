@@ -9,4 +9,21 @@ coin-based
 machine learning
 artificially intelligent
 self-assembling
-
+decentralized
+big data
+analytical
+personalized
+robotic
+edge-computing
+iot-ready
+mobile-first
+microservice
+crowd-funded
+backward-compatible
+client-centric
+cloud-first
+bleeding-edge
+cross-platform
+inclusive
+peer to peer
+data driven

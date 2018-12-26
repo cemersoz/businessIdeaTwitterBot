@@ -1,5 +1,8 @@
-Uber for {a} {n}
-{b} Uber for {n}
+{b} {c} for {a} {n}
 A blockchain for {a} {n}
 A new {b} VR Application
-{a} {b} {n}, but serverless.
+{a} {b} {c}, but serverless.
+{a} {b} {c}, but centralized.
+{a} {b} {c}, but distributed.
+{a} {b} {n}
+{a} {b} {c}

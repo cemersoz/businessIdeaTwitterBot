@@ -1,15 +1,28 @@
 import random
 import re
+import tweepy
+import time
 
+CONSUMER_KEY ="---"
+CONSUMER_SECRET = "---"
+ACCESS_KEY = "---"
+ACCESS_SECRET = "---"
+
+auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
+auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
+
+twitter = tweepy.API(auth)
 formats_file = open('formats.txt', 'r')
 nouns_file = open('nouns.txt', 'r')
 adjectives_file = open('adjectives.txt', 'r')
 buzzwords_file = open('buzzwords.txt', 'r')
+companies_file = open('companies.txt', 'r')
 
 formats = []
 nouns = []
 adjectives = []
 buzzwords = []
+companies = []
 
 for l in formats_file.readlines():
   formats.append(l.strip())
@@ -22,6 +35,9 @@ for l in adjectives_file.readlines():
 
 for l in buzzwords_file.readlines():
   buzzwords.append(l.strip())
+
+for l in companies_file.readlines():
+  companies.append(l.strip())
 
 def smart_replace(pattern, string, options, mincount, maxcount):
   while pattern in string:
@@ -40,10 +56,14 @@ def smart_replace(pattern, string, options, mincount, maxcount):
 while True:
   f = random.randint(0, len(formats)-1)
   format_string = formats[f]
-  f_ad = smart_replace('{a}', format_string, adjectives, 0, 2)
+  f_cm = smart_replace('{c}', format_string, companies, 1, 1)
+  f_ad = smart_replace('{a}', f_cm, adjectives, 0, 2)
   f_no = smart_replace('{n}', f_ad, nouns, 1, 1)
   f_bz = smart_replace('{b}', f_no, buzzwords, 0, 2)
 
   result = re.sub(' +',' ', f_bz.strip())
+  result.capitalize()
+  twitter.update_status("Business Idea: "+result)
   print(result)
+  time.sleep(3600)
   raw_input()
