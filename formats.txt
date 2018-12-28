@@ -1,5 +1,12 @@
-Uber for {a} {n}
-{b} Uber for {n}
-A blockchain for {a} {n}
-A new {b} VR Application
-{a} {b} {n}, but serverless.
+{b} {c} for {a} {n}
+A #blockchain for {a} {n}
+A {b} platform for {a} {n}
+A new {b} {t} Application
+A better {b} {c}.
+{b} {n}, powered by @IBMWatson
+A personal assistant for {a} {n}.
+{a} {b} {c}, but #serverless.
+{a} {b} {c}, but #centralized.
+{a} {b} {c}, but #distributed.
+{a} {b} {n}
+{a} {b} {c}

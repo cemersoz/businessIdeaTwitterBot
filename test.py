@@ -3,11 +3,6 @@ import re
 import tweepy
 import time
 
-
-auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
-auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
-
-twitter = tweepy.API(auth)
 formats_file = open('formats.txt', 'r')
 nouns_file = open('nouns.txt', 'r')
 adjectives_file = open('adjectives.txt', 'r')
@@ -54,7 +49,6 @@ def smart_replace(pattern, string, options, mincount, maxcount):
     string = re.sub(pattern, repl, string, 1)
   return string
 
-time.sleep(2700)
 while True:
   f = random.randint(0, len(formats)-1)
   format_string = formats[f]
@@ -65,6 +59,5 @@ while True:
   f_ty = smart_replace('{t}', f_bz, types, 1, 1)
   result = re.sub(' +',' ', f_ty.strip())
   result.capitalize()
-  twitter.update_status("Business Idea: "+result)
   print(result)
-  time.sleep(3600)
+  raw_input()

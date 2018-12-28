@@ -1,12 +1,46 @@
-blockchain
-distributed
-trustless
+#blockchain
+#distributed
+#trustless
 automated
-real-time
-faster than real-time
-tokenized
-coin-based
+#real-time
+faster than #real-time
+#tokenized
+#coin-based
 machine learning
 artificially intelligent
 self-assembling
-
+#decentralized
+big data
+analytical
+personalized
+#robotic
+edge-computing
+iot-ready
+mobile-first
+microservice
+crowd-funded
+backward-compatible
+client-centric
+cloud-first
+bleeding-edge
+cross-platform
+inclusive
+peer to peer
+data driven
+#neural-network
+#softwareDefined
+#thickData
+#valueBased
+#riskStratification
+#interoperable
+#modular
+#actionable
+#trusted
+#highlyAvailable
+#adaptive
+#consolidated
+#granular
+#enterpriseScale
+#robust
+#aggregated
+#extensive

@@ -1,7 +1,27 @@
-toilets
-cats
-dogs
+#toilets
+#cats
+#dogs
 disabled people
-private airplanes
-the commodities market
-millenials
+private #airplanes
+#millenials
+3rd generation #coffee
+#drones
+#hipsters
+#makers
+swarm #robotics
+operating systems
+#apartments
+#selfies
+#selfDrivingCars
+#painters
+#programmers
+IT professionals
+school #teachers
+#travelers
+#artists
+movie #stars
+#youtubers
+#farmers
+#grandparents
+#eldery people
+#pharmaceuticals
