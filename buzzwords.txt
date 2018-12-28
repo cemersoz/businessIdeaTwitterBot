@@ -10,7 +10,7 @@ machine learning
 artificially intelligent
 self-assembling
 #decentralized
-big data
+#bigData
 analytical
 personalized
 #robotic

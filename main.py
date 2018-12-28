@@ -3,7 +3,6 @@ import re
 import tweepy
 import time
 
-
 auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
 
@@ -64,6 +63,7 @@ while True:
   f_bz = smart_replace('{b}', f_no, buzzwords, 0, 2)
   f_ty = smart_replace('{t}', f_bz, types, 1, 1)
   result = re.sub(' +',' ', f_ty.strip())
+
   result.capitalize()
   twitter.update_status("Business Idea: "+result)
   print(result)
